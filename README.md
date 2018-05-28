@@ -18,13 +18,14 @@ eval "$(pipenv --completion)"
 # anyenv のインストール
 ```zsh
 git clone https://github.com/riywo/anyenv ~/.anyenv
+exec $SHELL -l
 ```
 
 # setup-env
 - anyenvのプラグイン(anyenv-update、anyenv-git)をインストール
 - rbenv(Ruby)、pyenv(Python)、ndenv(Node.js)、phpenv(PHP) のインストール
  - 他にもRenv、erlenv、goenv、plenv、scalaenvなど必要な物があればカスタマイズしてご自由にどうぞ
-- pyenv-virtualenv、ndenv-yarn のインストール
+- プラグイン(pyenv-virtualenv、ndenv-yarn) のインストール
 - Ruby(最新版)、Python(最新版、2.7系の最新)、Node.js(最新版) のインストール
 - PHPは[Laradock](https://github.com/laradock/laradock)で対応するためインストールしていない。一応phpenvをインストールしただけ。
 - pythonのvirtualenvでneovimに対応
