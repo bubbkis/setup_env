@@ -21,7 +21,7 @@ git clone https://github.com/riywo/anyenv ~/.anyenv
 exec $SHELL -l
 ```
 
-# setup-env
+# setup-env の使い方
 - anyenvのプラグイン(anyenv-update、anyenv-git)をインストール
 - rbenv(Ruby)、pyenv(Python)、ndenv(Node.js)、phpenv(PHP) のインストール
  - 他にもRenv、erlenv、goenv、plenv、scalaenvなど必要な物があればカスタマイズしてご自由にどうぞ
