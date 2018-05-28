@@ -26,7 +26,7 @@ git clone https://github.com/riywo/anyenv ~/.anyenv
  - 他にもRenv、erlenv、goenv、plenv、scalaenvなど必要な物があればカスタマイズしてご自由にどうぞ
 - pyenv-virtualenv、ndenv-yarn のインストール
 - Ruby(最新版)、Python(最新版、2.7系の最新)、Node.js(最新版) のインストール
-- PHPは後術するLaradockで対応するためインストールしていない。一応phpenvをインストールしただけ。
+- PHPは[Laradock](https://github.com/laradock/laradock)で対応するためインストールしていない。一応phpenvをインストールしただけ。
 - pythonのvirtualenvでneovimに対応
 ```zsh
 https://github.com/bubbkis/setup_env.git ~/setup_env
@@ -35,3 +35,4 @@ sh ~/setup_env/2_setup_env_plugin.sh
 sh ~/setup_env/3_setup_lang.sh
 sh ~/setup_env/4_setup_virtualenv_neovim.sh
 ```
+
