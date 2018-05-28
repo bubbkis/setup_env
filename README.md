@@ -1,5 +1,5 @@
 # .profileの設定
-- [2018年 ArchLinuxで開発環境を作る完全版 (UEFI + GNOME3 + GRUB) - 開発環境構築編](https://ore.saizensen.tech/2018_archlinux_develop_settings/) を行った前提です。
+- [2018年 ArchLinuxで開発環境を作る完全版 (UEFI + GNOME3 + GRUB) - 開発環境構築編](https://ore.saizensen.tech/2018_archlinux_develop_setup/) を行った前提です。
 - ↑をやっていない人は.zshrc、.zprofile、.bashrc、.bash_profileなどに以下の設定を
 ```zsh
 if [ -d $HOME/.anyenv ] ; then
