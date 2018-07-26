@@ -30,7 +30,7 @@ pip install pipenv
 echo " ------------ END ------------"
 
 #
-# Install Node.js env
+# Install Node.js
 #
 echo " ---------- Node.js ----------"
 ndenv --version
@@ -41,6 +41,19 @@ ndenv global $node_latest
 ndenv rehash
 node -v
 npm -v
+echo " ------------ END ------------"
+
+#
+# Install Go
+#
+echo " ---------- Go ----------"
+goenv --version
+goenv install -l
+go_latest=$(goenv install -l | grep ' [0-9.]*' | tail -1 | sed 's/ //g')
+goenv install $go_latest
+goenv global $go_latest
+goenv rehash
+go version
 echo " ------------ END ------------"
 
 exec $SHELL -l

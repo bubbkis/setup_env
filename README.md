@@ -13,6 +13,7 @@ if [ -d $HOME/.anyenv ] ; then
 fi
 eval "$(pyenv virtualenv-init -)"
 eval "$(pipenv --completion)"
+eval "$(goenv init -)"
 ```
 
 # anyenv のインストール
@@ -23,10 +24,10 @@ exec $SHELL -l
 
 # setup-env の使い方
 - anyenvのプラグイン(anyenv-update、anyenv-git)をインストール
-- rbenv(Ruby)、pyenv(Python)、ndenv(Node.js)、phpenv(PHP) のインストール
- - 他にもRenv、erlenv、goenv、plenv、scalaenvなど必要な物があればカスタマイズしてご自由にどうぞ
+- rbenv(Ruby)、pyenv(Python)、ndenv(Node.js)、phpenv(PHP)、goenv(Go) のインストール
+ - 他にもRenv、erlenv、plenv、scalaenvなど必要な物があればカスタマイズしてご自由にどうぞ
 - プラグイン(pyenv-virtualenv、ndenv-yarn) のインストール
-- Ruby(最新版)、Python(最新版、2.7系の最新)、Node.js(最新版) のインストール
+- Ruby(最新版)、Python(最新版、2.7系の最新)、Node.js(最新版)、Go(最新版) のインストール
 - PHPは[Laradock](https://github.com/laradock/laradock)で対応するためインストールしていない。一応phpenvをインストールしただけ。
 - pythonのvirtualenvでneovimに対応
 ```zsh

@@ -37,4 +37,11 @@ echo " ----------- phpenv ------------"
 anyenv install phpenv
 echo " ------------ END ------------"
 
+#
+# Install goenv
+#
+echo " ----------- goenv ------------"
+anyenv install goenv
+echo " ------------ END ------------"
+
 exec $SHELL -l
