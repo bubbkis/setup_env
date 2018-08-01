@@ -23,7 +23,7 @@ python_latest=$(pyenv install -l | grep -v '[a-z]' | tail -1 | sed 's/ //g')
 python_v2=$(pyenv install -l | grep -v '[a-z]' | grep '2.7.[0-9]*' | tail -1 | sed 's/ //g')
 pyenv install $python_latest
 pyenv install $python_v2
-pyenv global $python_v2 $python_latest
+pyenv global $python_latest $python_v2
 pyenv rehash
 python --version
 pip install pipenv
