@@ -35,6 +35,6 @@ https://github.com/bubbkis/setup_env.git ~/setup_env
 sh ~/setup_env/1_setup_env.sh
 sh ~/setup_env/2_setup_env_plugin.sh
 sh ~/setup_env/3_setup_lang.sh
-sh ~/setup_env/4_setup_virtualenv_neovim.sh
+sh ~/setup_env/4_setup_environments.sh
 ```
 
