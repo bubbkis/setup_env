@@ -11,6 +11,7 @@ rbenv install $ruby_latest
 rbenv global $ruby_latest
 rbenv rehash
 ruby -v
+gem install bundler
 echo " ------------ END ------------"
 
 #
@@ -26,7 +27,10 @@ pyenv install $python_v2
 pyenv global $python_latest $python_v2
 pyenv rehash
 python --version
+python2 --version
+python3 --version
 pip install pipenv
+pip2 install pipenv
 echo " ------------ END ------------"
 
 #
