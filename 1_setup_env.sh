@@ -26,8 +26,8 @@ echo " ------------ END ------------"
 #
 # Install ndenv
 #
-echo " ----------- ndenv ------------"
-anyenv install ndenv
+echo " ----------- nodenv ------------"
+anyenv install nodenv
 echo " ------------ END ------------"
 
 #

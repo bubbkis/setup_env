@@ -12,6 +12,13 @@ rbenv global $ruby_latest
 rbenv rehash
 ruby -v
 gem install bundler
+rbenv rehash
+#
+# Setup Ruby for Bundle 
+#
+# pathの指定をユーザ定義として ~/.bundle/config へ指定
+# bundle install 時、毎回 --path vendor/bundle が不要になる。
+bundle config path vendor/bundle
 echo " ------------ END ------------"
 
 #
@@ -37,12 +44,13 @@ echo " ------------ END ------------"
 # Install Node.js
 #
 echo " ---------- Node.js ----------"
-ndenv --version
-ndenv install -l
-node_latest=$(ndenv install -l | grep ' v[0-9.]*' | tail -1 | sed 's/ //g')
-ndenv install $node_latest
-ndenv global $node_latest
-ndenv rehash
+nodenv --version
+nodenv install -l
+#node_latest=$(nodenv install -l | grep ' v[0-9.]*' | tail -1 | sed 's/ //g')
+node_latest=$(nodenv install -l | grep -v '[a-z]' | tail -1 | sed 's/ //g')
+nodenv install $node_latest
+nodenv global $node_latest
+nodenv rehash
 node -v
 npm -v
 echo " ------------ END ------------"
@@ -53,7 +61,8 @@ echo " ------------ END ------------"
 echo " ---------- Go ----------"
 goenv --version
 goenv install -l
-go_latest=$(goenv install -l | grep ' [0-9.]*' | tail -1 | sed 's/ //g')
+#go_latest=$(goenv install -l | grep ' [0-9.]*' | tail -1 | sed 's/ //g')
+go_latest=$(goenv install -l | grep -v '[a-z]' | tail -1 | sed 's/ //g')
 goenv install $go_latest
 goenv global $go_latest
 goenv rehash
